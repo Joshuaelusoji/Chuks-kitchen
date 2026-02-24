@@ -89,7 +89,7 @@ Chuks-Kitchen/
 
 1. Clone the repository
 
-   git clone https://github.com/your-username/chuks-kitchen.git
+   git clone https://github.com/joshuaelusoji/chuks-kitchen.git
 
 2. Open `index.html` in your browser
 
@@ -109,4 +109,5 @@ No build tools required.
 ## Author
 
 Joshua Elusoji  
+
 Frontend Developer
