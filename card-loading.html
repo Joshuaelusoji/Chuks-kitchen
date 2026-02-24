@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Loading</title>
+</head>
+<body>
+    <style>
+        .cardloading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cardloading_desktop{
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .cardloading_mobile{
+            display: none;
+        }
+        
+        @media (max-width: 480px) {
+            .cardloading_desktop {
+                display: none;
+            }
+            .cardloading_mobile {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        
+    </style>
+    <section>
+        <img class="cardloading_desktop" src="assets/images/card-loading.png" alt="card-loading_img">
+        <img class="cardloading_mobile" src="assets/images/cardloading-mobile.png" alt="card-loading_img">
+    </section>
+</body>
+</html>

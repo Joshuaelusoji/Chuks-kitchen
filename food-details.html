@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fooddetails</title>
+</head>
+<body>
+  <style>
+    .foodDetails {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .foodDetails_Desktop {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+  
+    .foodDetails_Mobile {
+        display: none;
+    }
+    @media (max-width: 480px) {
+    .foodDetails_Desktop {
+        display: none;
+    }
+    .foodDetails_Mobile {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+    }
+  </style>
+  <section class="foodDetails">
+    <img class="foodDetails_Desktop" src="assets/images/food-details-desktop.png" alt="food-details_img">
+    <img class="foodDetails_Mobile" src="assets/images/food-details-mobile.png" alt="food-details_img">
+  </section>
+</body>
+</html>

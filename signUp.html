@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+</head>
+<body>
+    <style>
+        .SignUp-group{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .SignUp_Desktop{
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        .SignUp_mobile{
+            display: none;
+        }
+        @media (max-width: 480px) {
+            .SignUp_Desktop{
+                display: none;
+            }
+            .SignUp_mobile{
+              display: block;
+              max-width: 100%;
+              height: auto;
+              object-fit: cover;
+              object-position: center;
+            }
+        }
+    </style>
+    <section class="SignUp-group">
+        <img class="SignUp_Desktop" src="assets/images/signup-desktop.png" alt="signUp_img">
+        <img class="SignUp_mobile" src="assets/images/signup-mobile.png" alt="signUp_img">
+    </section>
+</body>
+</html>

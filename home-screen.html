@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homescreen</title>
+</head>
+<body>
+    <style>
+      .Home_screen-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .Home_screen_Desktop {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      
+      .Home_screen_mobile {
+        display: none;
+      }
+      
+      @media (max-width: 480px) {
+        .Home_screen_Desktop {
+            display: none;
+        }
+        .Home_screen_mobile {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+        }
+      }
+    </style>
+    <section>
+        <div class="Home_screen-group">
+           <img class="Home_screen_Desktop" src="assets/images/home-screen-features-desktop.png" alt="">
+           <img class="Home_screen_mobile" src="assets/images/home-screen-features-mobile.png" alt="mobile Home Screen_img">
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+</head>
+<body>
+    <style>
+       .Your_cart-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+        .cart_desktop {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .cart_mobile {
+            display: none;
+        }
+        @media (max-width: 480px) {
+        .cart_desktop {
+            display: none;
+        }
+        .cart_mobile {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+        }
+        }
+    </style>
+    <section class="Your_cart-group">
+        <img class="cart_desktop" src="assets/images/your-cart-desktop.png" alt="your-cart_img">
+        <img class="cart_mobile" src="assets/images/your-cart-mobile.png" alt="your-cart_img">
+    </section>
+</body>
+</html>

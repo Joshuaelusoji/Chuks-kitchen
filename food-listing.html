@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodlisting</title>
+</head>
+<body>
+    <style>
+        .menu_listing {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        }
+      
+        .menu_listing_Desktop {
+          max-width: 100%;
+          height: auto;
+          display: block;
+        }
+      
+        .menu_listing_Mobile {
+          display: none;
+        }
+        @media (max-width: 480px) {
+          .menu_listing_Desktop {
+            display: none;
+          }
+          .menu_listing_Mobile {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+    </style>
+    <section class="menu_listing">
+        <img class="menu_listing_Desktop" src="assets/images/food-listing-desktop.png" alt="food-listing_img">
+        <img class="menu_listing_Mobile" src="assets/images/food-listing-mobile.png" alt="food-listing_img">
+    </section>
+</body>
+</html>

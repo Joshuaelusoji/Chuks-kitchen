@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Order Completion</title>
+</head>
+<body>
+    <style>
+        .cardOrderCompletion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cardOrderCompletion_desktop {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .cardOrderCompletion_mobile {
+            display: none;
+        }
+        
+        @media (max-width: 480px) {
+            .cardOrderCompletion_desktop {
+                display: none;
+            }
+            .cardOrderCompletion_mobile {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    </style>
+    
+    <section class="cardOrderCompletion">
+        <img class="cardOrderCompletion_desktop" src="assets/images/card-order-completion.png" alt="card-order-completion_img">
+        <img class="cardOrderCompletion_mobile" src="assets/images/card-order-completion-mobile.png" alt="card-order-completion_img">
+    </section>
+</body>
+</body>
+</html>

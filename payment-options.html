@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+</head>
+<body>
+    <style>
+        .paymentOptions-group{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .paymentOptions_desktop{
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .paymentOptions_mobile{
+            display: none;
+        }
+        @media (max-width: 480px) {
+            .paymentOptions_desktop{
+                display: none;
+            }
+            .paymentOptions_mobile{
+                display: block;
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    </style>
+    <section class="paymentOptions_group">
+        <img class="paymentOptions_desktop" src="assets/images/payment-options-desktop.png" alt="">
+        <img class="paymentOptions_mobile" src="assets/images/payment-options-mobile.png" alt="">
+    </section>
+</body>
+</html>
