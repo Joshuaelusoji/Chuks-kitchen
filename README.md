@@ -95,6 +95,9 @@ Chuks-Kitchen/
 
 No build tools required.
 
+3. Vercel
+   https://chuks-kitchen-nine.vercel.app/
+
 ---
 
 ## Future Improvements
